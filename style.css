@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #2a2a72;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.user-form {
+  height: 10%;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+.user-form input {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  background-color: #4c2aa5;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.user-form input::placeholder {
+  color: #bbb;
+}
+
+.user-form input:focus {
+  outline: none;
+}
+
+#main {
+  width: 100%;
+  min-height: 25%;
+}
+
+.card {
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #4c2885;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.error-card {
+  width: 50%;
+  height: 100%;
+  margin: auto auto;
+  background-color: #4c2885;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.user-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 20%;
+}
+
+.avatar {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 5px solid #2a2a72;
+}
+
+.user-info {
+  color: #eee;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+}
+
+.user-desc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-desc a {
+  color: white;
+  margin-right: 2rem;
+}
+
+.user-desc a i {
+  font-size: 20px;
+}
+
+.user-info ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 0;
+  max-width: 400px;
+}
+
+.user-info ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-info ul li strong {
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+#repos {
+  margin-bottom: 5px;
+}
+
+.repo {
+  text-decoration: none;
+  color: #fff;
+  background-color: #212a72;
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+
+@media (min-width: 750px) and (max-width: 1100px) {
+  .user-form input {
+    width: 70%;
+  }
+
+  .card {
+    width: 70%;
+  }
+
+  .error-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    text-align-last: center;
+  }
+}
+
+@media (max-width: 750px) {
+  .user-form input {
+    width: 90%;
+  }
+
+  .card {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .error-card {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align-last: center;
+  }
+}
